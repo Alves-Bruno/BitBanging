@@ -33,6 +33,6 @@
 
 ### Hardware
 
-Conectar Raspberry Py and Arduino. [Link](https://oscarliang.com/raspberry-pi-and-arduino-connected-serial-gpio/).
-Disposição dos GPIOs do Raspberry Py. [Link](http://abyz.co.uk/rpi/pigpio/index.html).
+Conectar Raspberry Py and Arduino ([Link](https://oscarliang.com/raspberry-pi-and-arduino-connected-serial-gpio/)).
+Disposição dos GPIOs do Raspberry Py ([Link](http://abyz.co.uk/rpi/pigpio/index.html)).
 
