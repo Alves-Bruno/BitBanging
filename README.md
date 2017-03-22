@@ -26,7 +26,7 @@
 
 | Descrição | Arquivo |
 | --------- |:-------:|
-|Ler dados padrão serial no pino RX = 20.|[File](codigos/gpio_serial_reading.c)|
+|Ler dados padrão serial no pino RX = 22.|[File](codigos/gpio_serial_reading.c)|
 |Escrever dados padrão serial em um gpio qualquer.|[Link](http://raspberrypi.stackexchange.com/questions/24806/9-data-bits-on-uart-pins)|
 
 ------------------------

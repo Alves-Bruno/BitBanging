@@ -45,7 +45,7 @@ int main (){
 
 	inicia();
 
-	int TX = 21, RX = 20;
+	int TX = 21, RX = 22;
 
 	GPIO_pins(TX, RX);
 
