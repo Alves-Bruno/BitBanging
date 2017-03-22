@@ -4,7 +4,7 @@
 
 ----------------------
 
-##### Biblioteca utilizada
+### Biblioteca utilizada
 
 [PIGPIO](http://abyz.co.uk/rpi/pigpio/). Biblioteca com suporte a C e Phyton.
 
@@ -12,7 +12,7 @@
 
 ----------------------
 
-##### Exemplos Simples
+### Exemplos Simples
 
 
 | Descrição | Arquivo |
@@ -22,7 +22,7 @@
 
 -----------------------
 
-##### Bitbanging exemplos 
+### Bitbanging exemplos 
 
 | Descrição | Arquivo |
 | --------- |:-------:|
@@ -31,7 +31,7 @@
 
 ------------------------
 
-##### Hardware
+### Hardware
 
 Conectar Raspberry Py and Arduino. [Link](https://oscarliang.com/raspberry-pi-and-arduino-connected-serial-gpio/).
 Disposição dos GPIOs do Raspberry Py. [Link](http://abyz.co.uk/rpi/pigpio/index.html).
