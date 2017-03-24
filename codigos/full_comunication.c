@@ -50,21 +50,41 @@ int main (){
 
 	for (cont = 0; cont < 10; cont++){
 
-		serial_write_byte(pi_start, handle, 0xFF);
+		/*serial_write_byte(pi_start, handle, 0xFF);
 		serial_write_byte(pi_start, handle, 0x00);
 		serial_write_byte(pi_start, handle, 0x01);
 		serial_write_byte(pi_start, handle, 0x83);
 		serial_write_byte(pi_start, handle, 0x84);
 
-		sleep(1);
+		sleep(1);*/
 
-		while (serial_data_available(pi_start, handle) > 0){
+		
+	char *buf = (char *) malloc (2 * sizeof(char));
+	char *byte = (char *) malloc (2 * sizeof(char));
+	char *retorno = (char *) malloc (50 * sizeof(char));
 
-			serial_read(pi_start, handle, buf, 1);
-			printf ("%x", buf[0]);
-			memset(buf, 0, 2);
+	memset(byte, 0, 2);
+	memset(buf, 0, 2);
+
+
+	while (serial_data_available(pi->pi_start, pi->handle) > 0){
+
+		serial_read(pi->pi_start, pi->handle, byte, 1);
+		sprintf (buf, "%x", byte[0]);
+		printf("%x", buf[0]);
+
+		if (buf[1] != '\0'){
+			printf("%x", buf[1]);
 		}
-		printf("\n");
+
+		memset(buf, 0, 2);
+		memset(byte, 0, 2);
+		
+	} 
+
+	free (buf);
+	free (byte);
+
 	}
 
 	serial_close(pi_start, handle);
